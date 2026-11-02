@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/factorypulse_notifier/__init__.py
+src/factorypulse_notifier/cli.py
+src/factorypulse_notifier/service.py
+src/factorypulse_notifier.egg-info/PKG-INFO
+src/factorypulse_notifier.egg-info/SOURCES.txt
+src/factorypulse_notifier.egg-info/dependency_links.txt
+src/factorypulse_notifier.egg-info/entry_points.txt
+src/factorypulse_notifier.egg-info/requires.txt
+src/factorypulse_notifier.egg-info/top_level.txt
+tests/test_service.py

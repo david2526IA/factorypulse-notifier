@@ -1,0 +1,4 @@
+factorypulse-contracts @ git+https://github.com/david2526IA/factorypulse-contracts.git@ea89cbc7837e356104e73cfbb6276b26479e9732
+
+[dev]
+pytest>=8.0

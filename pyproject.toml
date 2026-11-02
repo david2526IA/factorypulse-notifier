@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factorypulse-notifier"
+version = "0.1.0"
+description = "Deterministic, auditable alert routing for FactoryPulse events."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "David"}]
+dependencies = [
+  "factorypulse-contracts @ git+https://github.com/david2526IA/factorypulse-contracts.git@ea89cbc7837e356104e73cfbb6276b26479e9732",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+factorypulse-notify = "factorypulse_notifier.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
